@@ -1,0 +1,320 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	/*background: #F5F5F5;*/
+	padding: 50px 0 0 0;
+}
+a{
+	color: #fff;
+	font-size: 120%;
+	text-transform: capitalize;
+}
+a:hover{
+	cursor: pointer;
+}
+h3{
+	font-size: 150%;
+	margin: 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+h2{
+	font-weight: 600;
+	text-align: center;
+	padding: 1% 0;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0;
+}
+p{
+	font-size: 120%;
+	padding: 1%;
+	text-align: center;
+	text-transform: capitalize;
+}
+.brand-mobile{
+	display: none;
+}
+section p{
+	text-transform: none;
+}
+section#first{
+	height: 60vh;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,50,100,0.5)), url(../img/banner.jpg);
+	background-position: center;
+}
+section#second,section#third{
+	/*height: 60vh;*/
+	background-color: #fff;
+}
+article.well{
+	max-width: 60%;
+}
+section#second article{
+	margin: 0 auto;
+}
+section#second article p{
+	text-align: justify;
+}
+section#third article{
+	margin: 20px auto;
+}
+section#third article p{
+	text-align: justify;
+}
+section#fourth article{
+	margin: 20px auto;
+}
+section#fourth article p{
+	text-align: justify;
+}
+img{
+	margin: 0 auto;
+}
+
+.details
+{
+	width: 100%;
+	height: 85vh;
+	background-color: grey;
+	
+}
+#form1{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background:rgba(170,172,169,0.8);
+	width: 400px;
+	border:1px solid #fff;
+	padding: 20px;
+}
+#form1 label{
+	margin: 10px 0 0 0;
+}
+#feed{
+	height: 20vh;
+	margin-bottom: 10px;
+}
+/*footer*/
+footer{
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,50,100,0.5));
+}
+.social span{
+	margin: 5px 10px 20px 0;
+	font-size: 200%;
+	/*border: 1px solid #fff;*/
+	min-width: 30px;
+	padding: 2px;
+}
+.footer{
+	width: 350px;
+	display: inline-block;
+	float: left;
+}
+.footer h3{
+	font-size: 200%;
+	margin: 7% 0 0 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+.quicklink,.newsletter{
+	width: 175px;
+	float: left;
+	padding: 15px 0 0 70px;
+	/*background-color: red;*/
+	float: left;
+}
+#q2{
+	padding-left: 50px;
+}
+.quicklink ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.quicklink ul li a{
+	text-decoration: none;
+	font-size: 16px;
+	color: #fff;
+	line-height: 30px;
+}
+.quicklink ul li a:hover{
+	color: brown;
+}
+.quicklink>a{
+	color: #fff;
+	font-size: 16px;
+	line-height: 30px;
+}
+.newsletter{
+	padding: 15px 0;
+	float: right;
+	width: 250px;
+}
+.newsletter label h3{
+	margin: 10px 0 0 0;
+}
+.newsletter input{
+	margin-bottom: 10px;
+	border-radius: 0;
+}
+.sec-footer{
+	border-top: 1px solid skyblue;
+}
+#chevron-up{
+	font-size: 20px;
+	border: 1px solid gray;
+	padding: 5px 10px;
+	border-radius: 5px;
+	position: fixed;
+	right: 10px;
+	top: 100%;
+	transform: translate(0, -45px);
+	display: none;
+	background-color: #F5F5F5;
+	box-shadow: 0px 3px 5px gray;
+}
+#chevron-up:hover{
+	color: brown;
+	border-color: brown;
+	transition: .3s;
+}
+
+/*about us page*/
+/* about page */
+.about h3{
+	color: #330000;
+	font-weight: 700;
+	text-align: left;
+}
+#abt{
+	margin-top: 20px;
+}
+.about p{
+	font-size: 16px;
+	margin-bottom: 15px;
+	text-align: justify;
+	padding: 0;
+}
+.icons span.fa{
+	margin: 5px 5px;
+	width: 30px;
+	border: 1px solid #2C3E50;
+	border-radius: 3px;
+	padding: 5px;
+	font-size: 20px;
+}
+.icons span.fa:hover{
+	opacity: 0.8;
+}
+.article{
+	background-color: #fff;
+	color: #2C3E50;
+}
+.ourteam{
+	color: #2C3E50;
+	padding: 20px 0 0 0;
+}
+
+/*media query*/
+@media screen and (max-width: 1200px){
+	article.well{
+		min-width: 75%;
+	}
+	#meta{
+		clear: left;
+	}
+	.footer{
+		width: 30%;
+		text-align: center;
+	}
+	#quick{
+		text-align: center;
+		float: left;
+		width: 70%;
+	}
+	.quicklink{
+		padding-top: 10px;
+		width: 33.3333%;
+	}
+	#q2{
+		padding-top: 10px;
+	}
+	#newslet{
+		text-align: center;
+		width: 100%;
+		float: left;
+		position: relative;
+	}
+	.newsletter{
+		text-align: center;
+		margin: 0 auto;
+		position: relative;
+		right: 50%;
+		transform: translate(50%,0);
+	}
+}
+@media screen and (max-width: 767px){
+	h2{
+		font-size: 200%;
+	}
+	h3{
+		font-size: 120%;
+	}
+	p{
+		font-size: 100%;
+	}
+	#form1{
+		width: 300px;
+		padding: 0px 10px 5px 10px;
+		transform: translate(-50%, -45%);
+	}
+	#feed{
+		height: 15vh;
+	}
+	.navbar-brand{
+		display: none;
+	}
+	.brand-mobile{
+		display: block;
+	}
+	article.well{
+		min-width: 95%;
+	}
+	#meta{
+		clear: left;
+	}
+	.footer{
+		width: 100%;
+		text-align: center;
+	}
+	#quick{
+		text-align: center;
+		float: left;
+		width: 100%;
+	}
+	.quicklink{
+		padding: 0;
+		width: 33.3333%;
+	}
+	#q2{
+		padding: 0;
+	}
+	#newslet{
+		text-align: center;
+		width: 100%;
+		float: left;
+		position: relative;
+	}
+	.newsletter{
+		text-align: center;
+		margin: 0 auto;
+		position: relative;
+		right: 50%;
+		transform: translate(50%,0);
+	}
+}
